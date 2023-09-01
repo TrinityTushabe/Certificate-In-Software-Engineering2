@@ -1,0 +1,117 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #f2f2f2, #61677A);
+    font-family: 'Times New Roman', Times, serif;
+    width: 100% !important;
+    height: 100vh;
+    display: table;
+    position: relative;
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+@media(max-width: 767px) {
+    form {
+        width: 90%;
+    }
+}
+
+.container {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-heading{
+    left: 150px;
+    background: black;
+    color: #fff;
+    background-size: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 39px;
+
+}
+#id{
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+    width: 90%;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.name-group {
+    display: flex;
+    justify-content: space-between;
+}
+.name-group input {
+    width: 48%;
+}
+.location-group {
+    display: flex;
+    justify-content: space-between;
+}
+.location-group select {
+    width: 30%;
+}
+.gender-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.form-group.name-group input {
+    flex: 1;
+    margin-right: 10px; /* Add space between input fields */
+}
+/* #trinity{
+
+} */
+
+/* Footer Styles */
+#footer {
+    margin-top: 60px;
+    background-color: transparent;
+    font-style: Times New Roman;
+    color: #394867;
+    text-align: center;
+
+}
+
+#footer .social-links a {
+    color: black;
+}
+input:required:invalid {
+    border: 2px solid red;
+}
+
+input:required:valid {
+    border: 2px solid green;
+}
+
