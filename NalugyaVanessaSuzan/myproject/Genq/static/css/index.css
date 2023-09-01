@@ -19,7 +19,7 @@
         font-style: bold;
       }
       .is-invalid {
-        border-color: red !important; /* Add !important to override Bootstrap's default styles */
+        border-color:gray !important; /* Add !important to override Bootstrap's default styles */
     }
     
     /* Style for error messages */
