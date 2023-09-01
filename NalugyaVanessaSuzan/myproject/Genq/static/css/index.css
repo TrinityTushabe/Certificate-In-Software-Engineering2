@@ -1,0 +1,29 @@
+.footer{
+    background-color:lightgreen;
+    padding:25px;
+    width:100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    margin-top: 140px;
+    margin-bottom: 0;
+    }
+
+    button {
+        width: 30%;
+        color:white;
+        margin-left: 50px;
+    }
+    .asteriskField{
+        color: red;
+        font-style: bold;
+      }
+      .is-invalid {
+        border-color: red !important; /* Add !important to override Bootstrap's default styles */
+    }
+    
+    /* Style for error messages */
+    .error-message {
+        color: red;
+        font-size: 14px;
+    }
