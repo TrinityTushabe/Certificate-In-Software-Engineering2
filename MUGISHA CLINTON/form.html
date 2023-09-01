@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="background-color: rgb(240, 248, 255, 0.6); position:absolute; height: 900px; width: 752px; top: 30px; left: 436px; opacity:80%;">
+        <div style="position: relative; width: 703px; height: 674px; left: 20px; top: 20px;">
+            <form name="registration" onsubmit=" return validate(event);">
+                <div class="row g-3">
+                    <div class="col" style="text-align: center; background-color: black;">
+                        <h1 style="color: white;">GENQ KYC FORM</h1>
+                    </div>
+                </div>
+                <h3>Bio Data</h3>
+                    <hr style="height: 10px; /* Adjust the height to increase thickness */
+                    background-color: black; /* Change the color to black or your desired color */
+                    border: none; /* Remove the default border */
+                    margin: 10px 0; /* Add margin for spacing */">
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="" class="form-control" placeholder="First name" aria-label="First name"
+                            name="firstname">
+                        <span id="firstname-error"></span>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"
+                            name="lastname">
+                        <span id="lastname-error"></span>
+                    </div>
+                </div>
+                <br>
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="date" class="form-control" placeholder="Date" aria-label="Date" id="date"
+                            name="date" >
+                        <span id="date-error"></span>
+                    </div>
+                    <div class="col">
+                        <div class="col-auto">
+                            <label class="visually-hidden" for="autoSizingSelect">Gender</label>
+                            <select class="form-select" id="autoSizingSelect" itemid="gender">
+                                <option selected>Select Gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                            <span id="gender-error"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <h3>Location</h3>
+                    <hr style="height: 10px; /* Adjust the height to increase thickness */
+                    background-color: black; /* Change the color to black or your desired color */
+                    border: none; /* Remove the default border */
+                    margin: 10px 0; /* Add margin for spacing */">
+                <br>
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Country" aria-label="Country" id="country"
+                            name="country">
+                        <span id="country-error"></span>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="State/District" aria-label="State/District"
+                            id="State" name="state">
+                        <span id="State-error"></span>
+                    </div>
+                </div>
+                <br>
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Town" aria-label="Town" id="Town"
+                            name="Town">
+                        <span id="town-error"></span>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code"
+                            id="Zip Code" name="zip code">
+                        <span id="zip-error"></span>
+                    </div>
+                </div>
+                <h3>Contact and Address</h3>
+                <hr style="height: 10px; /* Adjust the height to increase thickness */
+                    background-color: black; /* Change the color to black or your desired color */
+                    border: none; /* Remove the default border */
+                    margin: 10px 0; /* Add margin for spacing */">
+                <br>
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Phone Number 1" aria-label="Phone Number 1"
+                            name="phone1">
+                        <span id="phone-error"></span>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Phone Number 1" aria-label="Phone Number 2"
+                            name="phone2">
+                        <span id="phone-error"></span>
+                    </div>
+                </div>
+                <br>
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Email" name="email">
+                        <span id="email-error"></span>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="validate.js"></script>
+</body>
+
+</html>

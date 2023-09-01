@@ -1,0 +1,81 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css' rel='stylesheet')
+  title Document
+div(style='background-color: rgb(240, 248, 255, 0.6); position:absolute; height: 900px; width: 752px; top: 30px; left: 436px; opacity:80%;')
+  div(style='position: relative; width: 703px; height: 674px; left: 20px; top: 20px;')
+    form(name='registration' onsubmit=' return validate(event);' method='post' action='/api/regcustomer')
+      .row.g-3
+        .col(style='text-align: center; background-color: black;')
+          h1(style='color: white;') GENQ KYC FORM
+      h3 Bio Data
+      hr(style='height: 10px; /* Adjust the height to increase thickness */\
+      background-color: black; /* Change the color to black or your desired color */\
+      border: none; /* Remove the default border */\
+      margin: 10px 0; /* Add margin for spacing */')
+      .row.g-3
+        .col
+          input.form-control(type='' placeholder='First name' aria-label='First name' name='firstname')
+          span#firstname-error
+        .col
+          input.form-control(type='text' placeholder='Last name' aria-label='Last name' name='lastname')
+          span#lastname-error
+      br
+      .row.g-3
+        .col
+          input#date.form-control(type='date' placeholder='Date' aria-label='Date' name='date')
+          span#date-error
+        .col
+          .col-auto
+            label.visually-hidden(for='autoSizingSelect') Gender
+            select#gender.form-select(name='gender')
+              option#gender(selected='' value='') Gender
+              option#gender(value='Male' name='gender') Male
+              option#gender(value='Female' name='gender') Female
+            span#gender-error
+      h3 Location
+      hr(style='height: 10px; /* Adjust the height to increase thickness */\
+      background-color: black; /* Change the color to black or your desired color */\
+      border: none; /* Remove the default border */\
+      margin: 10px 0; /* Add margin for spacing */')
+      br
+      .row.g-3
+        .col
+          input#country.form-control(type='text' placeholder='Country' aria-label='Country' name='country')
+          span#country-error
+        .col
+          input#State.form-control(type='text' placeholder='State/District' aria-label='State/District' name='state')
+          span#state-error
+      br
+      .row.g-3
+        .col
+          input#Town.form-control(type='text' placeholder='Town' aria-label='Town' name='town')
+          span#town-error
+        .col
+          input.form-control(type='text' placeholder='Zip Code' aria-label='Zip Code' id='Zip Code' name='zipcode')
+          span#zip-error
+      h3 Contact and Address
+      hr(style='height: 10px; /* Adjust the height to increase thickness */\
+      background-color: black; /* Change the color to black or your desired color */\
+      border: none; /* Remove the default border */\
+      margin: 10px 0; /* Add margin for spacing */')
+      br
+      .row.g-3
+        .col
+          input.form-control(type='text' placeholder='Phone Number 1' aria-label='Phone Number 1' name='phone1')
+          span#phone1-error
+        .col
+          input.form-control(type='text' placeholder='Phone Number 1' aria-label='Phone Number 2' name='phone2')
+          span#phone2-error
+      br
+      .row.g-3
+        .col
+          input.form-control(type='email' placeholder='Email' aria-label='Email' name='email')
+          span#email-error
+      br
+      br
+      button.btn.btn-primary(type='submit') Submit
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js')
+script(src='/validate.js')
